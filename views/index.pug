@@ -1,0 +1,27 @@
+extends layout
+
+block layout-content
+        div.Container
+            div.Message
+                div.Title
+                    h1 Food For Thought
+                a(href="/mainMenu")
+                    div.NavButton Menu
+
+            div.Message
+                div.Title
+                    h1 Space for More?
+                a(href="/deserts")
+                    div.NavButton Desserts
+
+            div.Message
+                div.Title
+                    h1 Thirsty?
+                a(href="/drinksMenu")
+                    div.NavButton Drinks
+
+
+
+        div.NavButtons
+            a(href="/book")
+                div.NavButton BOOK NOW!

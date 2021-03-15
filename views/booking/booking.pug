@@ -1,0 +1,21 @@
+extends ../layout
+
+block layout-content
+    div.BookingContainer
+        form(action='/book' method="POST")
+            div.FormGroup
+                label.FormLabel Name
+                    input(type='text', placeholder= 'Booking Name', name='bookingName',)
+            div.FormGroup
+                label.FormLabel Date
+                    input(type='date', placeholder= 'Date of booking', name='date')
+            div.FormGroup
+                label.FormLabel Time
+                    input(type='time', placeholder= 'Time of booking', name='time')
+            div.NavButtons
+                input.Button(type="submit", value="Book Now")
+
+
+
+
+
